@@ -2,10 +2,10 @@
 
 ## Recriando a home do Netflix utilizando: 
 
-*html5 
-*css3 
-*javascript 
-*jquery
+-html5 
+-css3 
+-javascript 
+-jquery
 
 ***
 
