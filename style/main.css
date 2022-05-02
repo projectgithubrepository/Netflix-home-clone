@@ -1,0 +1,146 @@
+:root{
+    --vermelho:#e50914;
+    --preta:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size:40px;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* filme principal */
+.filme-principal{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('/img/capa-house.jpg');
+    
+    height: 400px;
+    background-size: cover;
+    /* background-position: bottom center; */
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color:white;
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+/* wrapper */
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .container {
+    width: 50%;
+}
+
+/* carroussel*/
+.box-filme{
+    height:100%;
+    width:100%;
+    display:block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+
+.carrosel-filmes .item {
+    transition: ease-in-out;
+}
+.carrosel-filmes .item:hover {
+    filter: saturate(1);
+    filter:brightness(115%);
+    transform: scale(1.3, 1.3);
+    cursor: pointer;
+}
+
+
+.popup {
+    position: absolute;
+    left:30%;
+    bottom:5%;
+    width:50%;
+    height:80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.117),rgba(0,0,0,.50)), url('/img/houseMoreInfo.jpg');
+    border-radius: 2px;
+    display:flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.popupBotao {
+    margin-top: 45px;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: .3s ease all;
+    z-index: 15;
+}
+
+.popupBotao:hover {
+    filter:brightness(80%)
+}

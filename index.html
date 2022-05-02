@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css" class="rel">
+
+    <!-- responsividade -->
+    <link rel="stylesheet" href="style/responsive.css" class="rel">
+
+    <!-- owl css -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css" class="rel">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css" class="rel">
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">HOUSE OF CARDS</h3>
+                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eligendi nam vel magnam quia odio repudiandae, consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eligendi nam vel magnam quia odio repudiandae, consequatur.</p>
+                <button role="button" class="botao" onclick="linkTo()">
+                    <i class="fa-solid fa-play"></i>
+                    ASSISTIR AGORA
+                </button>
+                <button role="button" class="botao" onclick="Popup()">
+                    <i class="fa-solid fa-circle-info"></i>
+                    MAIS INFORMAÇÕES
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/redCapa.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/bakicapa.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/batmancapa.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/cavDaLuacapa.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/demonSlayerCapa.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/halocapa.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/homemaranhacapa.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/simpsonscapa.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/hotelTransilvaniaCapa.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/soniccapa.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6ba5e90d3c.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="js/owl/owl.carousel.min.js" crossorigin="anonymous"></script>
+    <script src="js/owl/setup.js" crossorigin="anonymous"></script>
+    <script src="js/popup.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
